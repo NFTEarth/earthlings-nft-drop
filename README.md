@@ -1,49 +1,14 @@
-# ERC721 Drop Claim Page
+# Earthlings Collection Mint Page
 
-In this example, you can create your own ERC721 Drop claim page just by customizing the template with your branding and plugging in your NFT Drop contract address.
+### The Earthlings is an NFT collection of 4,444 NFTs. It has been deployed using the Thirdweb NFT Drop contract template and the contract address is 0x8778B7FD7e2480C6F9Ad1075Bd848B7Ce1b9d90C. 
 
-This template works with the NFT Drop / Signature Drop contract from thirdweb or when using any of the Drop contract bases or if you implement these extensions:
+# View on Arbiscan:
 
-- [ERC721ClaimConditions](https://portal.thirdweb.com/solidity/extensions/erc721claimconditions)
-- [ERC721ClaimPhases](https://portal.thirdweb.com/solidity/extensions/erc721claimphases)
+[Arbiscan](https://arbiscan.io/address/0x8778b7fd7e2480c6f9ad1075bd848b7ce1b9d90c) | URL: https://arbiscan.io/address/0x8778b7fd7e2480c6f9ad1075bd848b7ce1b9d90c
 
-## Using This Repo
+# Mint 
 
-To create your own version of this template, you can use the following steps:
+[Mint](https://mintearthling.nftearth.exchange/) | URL: https://mintearthling.nftearth.exchange
 
-Run this command from the terminal to clone this project:
+![image](https://github.com/NFTEarth/earthlings-nft-drop/assets/29180454/2e70d721-1555-46fe-961c-606f1e35bcce)
 
-```bash
-npx thirdweb create --template nft-drop
-```
-
-### 1. Deploy An NFT Drop on thirdweb
-
-If you haven't already deployed your contract, head over to the thirdweb dashboard and create your own NFT Drop contract.
-
-You can learn how to do that with our guide [Release an NFT drop on your own site without writing any code](https://portal.thirdweb.com/guides/release-an-nft-drop-with-no-code#create-a-drop-contract).
-
-Be sure to configure a **name**, **description**, and **image** for your NFT drop in the dashboard.
-
-### 2. Configure Parameters
-
-Go to the [`parameters.ts`](/src/consts/parameters.ts) and update the following values:
-
-1. `contractConst`: The smart contract address of your NFT drop.
-2.  `chainConst`: The name of the chain that your smart contract is deployed to.
-
-### 3. Customize the Styling
-
-You can change the theme and primary color of the page by updating `primaryColorConst` and `themeConst` in [`parameters.ts`](/src/consts/parameters.ts). 
-
-If you want to go further, you can also update the styles in the respective components by changing the [Tailwind](https://tailwindcss.com/) classes.
-
-### 4. Optional: Add Gasless Transaction Support
-
-If you want to sponsor the gas fees for your user, you can update the `relayerUrlConst` in [`parameters.ts`](/src/consts/parameters.ts) to point to your Open Zeppelin relayer or `biconomyApiKeyConst` and `biconomyApiIdConst` to use Biconomy.
-
-Learn more: https://portal.thirdweb.com/glossary/gasless-transactions
-
-## Join our Discord!
-
-For any questions or suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
